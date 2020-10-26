@@ -3,6 +3,7 @@
 // is run in the body.
 // Pre-condition: Callback must be a single string-param function
 type StringCallbackFunction = (s: string) => void;
+const MESSAGE_DELAY: number = 1000; 
 const start = (callback: StringCallbackFunction) => {
     setTimeout(_ => {
         callback('Hello');
@@ -10,10 +11,10 @@ const start = (callback: StringCallbackFunction) => {
             callback('My name is');
             setTimeout(_ => {
                 callback('Arjan Gupta');
-            }, 100);
-        }, 1000);
-    }, 1000);
+            }, MESSAGE_DELAY);
+        }, MESSAGE_DELAY);
+    }, MESSAGE_DELAY);
 }
 
-// Pass start a function that takes a string arg 
+// Pass start a function that takes a string arg
 start((message: string) => { console.log( message ); });
