@@ -1,6 +1,6 @@
 // Description: Use callbacks and setTimeout() to delay displaying messages
 var MESSAGE_DELAY = 1000;
-var start = function (callback) {
+function start(callback) {
     setTimeout(function () {
         callback('Hello');
         setTimeout(function () {
@@ -10,6 +10,7 @@ var start = function (callback) {
             }, MESSAGE_DELAY);
         }, MESSAGE_DELAY);
     }, MESSAGE_DELAY);
-};
+}
 // Pass start a function that takes a string arg
 start(function (message) { console.log(message); });
+start = "ks";

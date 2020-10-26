@@ -6,7 +6,7 @@
 // Pre-condition: Callback must be a single string-param function
 type StringCallbackFunction = (s: string) => void;
 const MESSAGE_DELAY: number = 1000; 
-const start = (callback: StringCallbackFunction) => {
+function start (callback: StringCallbackFunction) {
     setTimeout(() => {
         callback('Hello');
         setTimeout(() => {
