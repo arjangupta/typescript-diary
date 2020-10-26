@@ -1,0 +1,17 @@
+{
+  "name": "typescript_asyc_await",
+  "version": "1.0.0",
+  "description": "Code to help understand the async/await features of TypeScript",
+  "main": "src/index.js",
+  "repository": "git@github.com:arjangupta/typescript_asyc_await.git",
+  "author": "Arjan Gupta <agupta@intellifarms.com>",
+  "license": "The Unlicense",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "tsc src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
