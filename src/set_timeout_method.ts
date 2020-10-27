@@ -2,10 +2,8 @@
 
 // "start" is a function that takes another function
 // as its argument (callback). Then, the callback function
-// is run in the body.
+// is run multiple times in the body with different strings.
 // Pre-condition: Callback must be a single string-param function
-type StringCallbackFunction = (s: string) => void;
-const MESSAGE_DELAY: number = 1000; 
 function start (callback: StringCallbackFunction) {
     setTimeout(() => {
         callback('Hello');
