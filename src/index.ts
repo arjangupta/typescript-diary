@@ -10,4 +10,11 @@ function wait (delay_in_milliseconds: number) {
 // Takes a callback function and runs it with different arguments and a fixed delay
 async function startAsync (callback: CommonDeclarations.StringCallbackFunction) {
     await wait(CommonDeclarations.MESSAGE_DELAY);
+    callback("Hello again");
+    await wait(CommonDeclarations.MESSAGE_DELAY);
+    callback("My name is");
+    await wait(CommonDeclarations.MESSAGE_DELAY);
+    callback("Arjan Gupta");
 }
+
+startAsync(text => console.log(text));
