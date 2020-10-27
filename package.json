@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node dist/lib/index.js",
-    "set_timeout_method": "node dist/lib/set_timeout_method.js",
+    "callback_method": "node dist/lib/set_timeout_method.js",
     "foo": "node dist/lib/foo.js",
     "build": "tsc"
   },
