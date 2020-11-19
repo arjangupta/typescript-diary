@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node dist/lib/index.js",
+    "async_await": "node dist/lib/async_await.js",
     "callback_method": "node dist/lib/set_timeout_method.js",
     "foo": "node dist/lib/foo.js",
     "build": "tsc"
