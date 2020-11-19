@@ -13,7 +13,11 @@ function interfacesMain() {
         first: thing1
     }
 
-    console.log({object1})
+    console.log({object1}); // outputs: { object1: { first: 'hello' } }
+
+    object1.second = thing2;
+
+    console.log({object1}); // outputs: { object1: { first: 'hello', second: undefined } }
 }
 
 interfacesMain();
