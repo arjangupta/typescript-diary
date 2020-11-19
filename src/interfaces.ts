@@ -25,6 +25,8 @@ function interfacesMain() {
     };
 
     console.log({object2}); // outputs: { object2: { first: 'hello', second: undefined } }
+
+    // object2.third = "ok"; - CAUSES AN ERROR, because there is no third key in Interface1 
 }
 
 interfacesMain();
