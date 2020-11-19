@@ -1,6 +1,6 @@
 // Description: Practicing the usage of interfaces
 
-function main() {
+function interfacesMain() {
     interface Interface1 {
         first: string;
         second?: number;
@@ -10,11 +10,10 @@ function main() {
     const thing2 = undefined;
 
     const object1 : Interface1 = {
-        first: thing1,
-        second: thing2
+        first: thing1
     }
 
     console.log({object1})
 }
 
-main();
+interfacesMain();

@@ -7,7 +7,7 @@ async function foo (x: string): Promise<Maybe<string>> {
 }
 
 // Entry-point for program, which is the common practice
-async function main() {
+async function mainFoo() {
     // Wait for the promise to be resolved
     const result = await foo("Arjan");
     console.log(result);
@@ -21,4 +21,4 @@ async function main() {
     console.log(anotherResult);
 }
 
-main()
+mainFoo()
