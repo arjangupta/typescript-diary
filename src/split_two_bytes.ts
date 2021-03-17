@@ -12,11 +12,11 @@ function split_two_bytes() {
 
     // Extract least signifcant byte from example number
     const extracted_ls_byte : number = example_two_byte & ls_byte_mask;
-    console.log(chalk.green(`Extracted LS byte: ${extracted_ls_byte}`));
+    console.log(chalk.green(`Extracted LS byte: ${extracted_ls_byte}`)); // outputs 12
 
     // Extract the most significant byte from example number
     const extracted_ms_byte : number = (example_two_byte & ms_byte_mask) >> 8;
-    console.log(chalk.cyan(`Extracted MS byte: ${extracted_ms_byte}`));
+    console.log(chalk.cyan(`Extracted MS byte: ${extracted_ms_byte}`)); // outputs 255
 }
 
 split_two_bytes();
