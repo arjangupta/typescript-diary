@@ -12,10 +12,12 @@
     "async_await": "node dist/lib/async_await.js",
     "callback_method": "node dist/lib/set_timeout_method.js",
     "foo": "node dist/lib/foo.js",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc-watch"
   },
   "devDependencies": {
     "typescript": "^4.0.3",
+    "tsc-watch": "^4.2.9",
     "chalk": "^4.1.0"
   }
 }
