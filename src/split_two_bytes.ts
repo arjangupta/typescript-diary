@@ -6,13 +6,17 @@ function split_two_bytes() {
     const example_two_byte : number = 65292; // 0xFF0C
 
     // All 1s in most significant byte
-    const msb_mask : number = 65280 // 0xFF00
+    const ms_byte_mask : number = 65280 // 0xFF00
     // All 1s in least significant byte
-    const lsb_mask : number = 255; // 0x00FF
+    const ls_byte_mask : number = 255; // 0x00FF
 
     // Extract least signifcant byte from example number
-    const extracted_lsb : number = example_two_byte & lsb_mask;
-    console.log(chalk.green(`Extracted LSB: ${extracted_lsb}`));
+    const extracted_ls_byte : number = example_two_byte & ls_byte_mask;
+    console.log(chalk.green(`Extracted LS byte: ${extracted_ls_byte}`));
+
+    // Extract the most significant byte from example number
+    const extracted_ms_byte : number = (example_two_byte & ms_byte_mask) >> 8;
+    console.log(chalk.cyan(`Extracted MS byte: ${extracted_ms_byte}`));
 }
 
 split_two_bytes();
